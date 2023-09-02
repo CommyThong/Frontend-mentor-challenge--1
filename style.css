@@ -25,7 +25,7 @@ body {
     max-width: 1000px;
     height: fit-content;
     justify-content: center;
-    margin: 5%;
+    margin: 5% 0 2% 0;
     border-radius: 40px;
     box-shadow: rgba(0, 0, 0, 0.427) 10px 10px 30px;
 }
@@ -206,7 +206,7 @@ body {
     margin: 0 5px 0 5px;
 }
 
-@media (max-width: 1090px ) {
+@media (max-width: 1083px ) {
     body {
         display: flex;
         flex-wrap: wrap;
@@ -214,13 +214,70 @@ body {
     }
     .main-container {
         width: 480px;
+        margin: 0;
+        box-shadow: none;
     }
 
+    .container-1 {
+        min-height: 10em;
+        max-height: 26em;
+        border-radius: 0px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+
+    .attribution {
+          min-width: 600px;
+        }
+        .continue {
+            margin: 0.5em 0 7em 0;
+        }
+
+        .summary div {
+            font-size: 150%;
+            font-weight: 800;
+            margin-right: 11.9em;
+            margin-top: 1.5em;
+            font-size: 110%;
+        }
+
+        .circle {
+            /* border: 1px solid black; */
+            border-radius: 50%;
+            height: 10em;
+            width: 10em;
+            margin-bottom: 1em;
+        }
+
+        .result {
+            color: hsl(241, 100%, 89%);
+            font-size: 120%;
+            margin: 1em 0 0 0;
+        }
+
+        .score {
+            font-size: 110%;
+            width: 70%;
+        }
+
+        .great {
+            font-size: 170%;
+            margin: 0;
+        }
+
+        .seventysix {
+            font-size: 370%;
+        }
+
+        .hundred {
+            font-size: 95%;
+        }
+
+}
+
+@media (max-width: 800px ) {
     .attribution {
           min-width: 500px;
         }
 
-        .attribution a {
-           
-        }
 }
