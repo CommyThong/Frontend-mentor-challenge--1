@@ -50,12 +50,34 @@ body {
     flex: 1;
     flex-direction: column;
     gap: 0.5em;
-    text-align: center;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .list-1,.list-2 li {
     font-size: 1.1em;
+}
+
+.list-2 {
+    display: flex;
+    flex: 1;
+    gap: 1em;
+    font-weight: 600;
+    font-size: 120%;
+}
+
+.list-2 li {
+    display: flex;
+    width: 80%;
+    height: 11%;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7em;
+}
+
+.list-2 img {
+    height: 25px;
+    width: 25px;
 }
 
 .circle {
@@ -99,6 +121,68 @@ body {
     font-size: 120%;
     width: 62%;
     margin: 0 0 3em 0;
+}
+
+.summary {
+    display: flex;
+}
+
+.summary div {
+    font-size: 150%;
+    font-weight: 800;
+    margin-right: 8em;
+    margin-bottom: 1em;
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.084);
+    border-radius: 20px;
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, 0.064);
+    border-radius: 20px;
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 0.053);
+    border-radius: 20px;
+}
+
+.visual {
+    background-color: hsla(234, 85%, 45%, 0.057);
+    border-radius: 20px;
+}
+
+.reaction-two {
+    color: red;
+    margin: 0 5em 0 0;
+}
+
+.memory-two {
+    color: rgb(255, 183, 0);
+    margin: 0 5em 0 0;
+}
+
+.verbal-two {
+    color: rgb(0, 202, 158);
+    margin: 0 5.7em 0 0;
+}
+
+.visual-two {
+    color: blue;
+    margin: 0 6em 0 0;
+}
+
+.hundred-two {
+    color: rgba(0, 0, 0, 0.496);
+}
+
+.continue {
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 40px;
+    color: white;
+    margin: 1.7em 0 1.7em 0;
 }
 
 
