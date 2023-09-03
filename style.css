@@ -24,8 +24,9 @@ body {
     flex-wrap: wrap;
     max-width: 1000px;
     height: fit-content;
+    max-height: fit-content;
     justify-content: center;
-    margin: 8rem 0 2% 0;
+    margin: 6.8rem 0 0 0;
     border-radius: 40px;
     box-shadow: rgba(0, 0, 0, 0.427) 10px 10px 30px;
 }
@@ -45,7 +46,9 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     min-width: 30em;
-    min-height: 40em;
+    max-width: 30em;
+    min-height: 41em;
+    max-height: 41em;
 }
 
 .list-1,.list-2 {
@@ -60,6 +63,10 @@ body {
 }
 .list-1,.list-2 li {
     font-size: 1.1em;
+}
+
+.list-1 {
+    margin: auto;
 }
 
 .list-2 {
@@ -92,14 +99,14 @@ body {
     border-radius: 50%;
     height: 15em;
     width: 15em;
-    margin: 0.5em 0 0 0;
+    margin: 2.5em 0 -3em 0;
     background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
 }
 
 .result {
     color: hsl(241, 100%, 89%);
-    font-size: 160%;
-    margin: 1em 0 1em 0;
+    font-size: 170%;
+    margin: 0 0 -0.2em 0;
 }
 
 .seventysix {
@@ -115,16 +122,16 @@ body {
 
 .great {
     color: hsl(221, 100%, 96%);
-    font-size: 200%;
+    font-size: 210%;
     font-weight: 700;
-    margin: 1em 0 0.5em 0;
+    margin: 2em 0 0.5em 0;
 }
 
 .score {
     color: hsl(241, 100%, 89%);
-    font-size: 120%;
-    width: 62%;
-    margin: 0 0 3em 0;
+    font-size: 125%;
+    width: 63%;
+    margin: 0 0 0.7em 0;
 }
 
 .summary {
@@ -134,28 +141,27 @@ body {
 .summary div {
     font-size: 150%;
     font-weight: 800;
-    margin-right: 8em;
-    margin-bottom: 1em;
+    margin: 1em 8em 1em 0;
 }
 
 .reaction {
-    background-color: hsla(0, 100%, 67%, 0.084);
-    border-radius: 15px;
+    background-color: hsla(0, 100%, 67%, 0.059);
+    border-radius: 10px;
 }
 
 .memory {
     background-color: hsla(39, 100%, 56%, 0.064);
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .verbal {
     background-color: hsla(166, 100%, 37%, 0.053);
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .visual {
     background-color: hsla(234, 85%, 45%, 0.057);
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .reaction-two {
@@ -194,6 +200,7 @@ body {
     display: flex;
     min-width: 1000px;
     justify-content: center;
+    margin-top: 2em;
     }
 
 
@@ -211,58 +218,94 @@ body {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        margin: 0;
     }
     .main-container {
-        width: 480px;
+        width: 27.5em;
         margin: 0;
+        max-height: 100vh;
+        min-height: 100vh;
         /* box-shadow: none; */
     }
 
+    .container-1,.container-2 {
+        display: flex;
+        flex: 50% 0 1;
+        flex-wrap: wrap;
+        justify-content: center;
+        min-width: 30em;
+        min-height: 40em;
+    }
+
     .container-1 {
-        min-height: 10em;
+        min-height: 26em;
         max-height: 26em;
+        max-width: 27.5em;
+        min-width: 27.5em;
         border-radius: 0px;
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
+        margin: 0;
+    }
+
+    .container-2 {
+        margin: 0;
+        max-width: 27.5em;
+        min-width: 27.5em;
+        min-height: 32.2em;
+        max-height: 32.2em;
+    }
+
+    .list-2 {
+        margin: -2em 0 0 0;
+        max-width: 23.5em;
+        min-width: 23.5em;
     }
 
     .attribution {
-          min-width: 600px;
-          margin-top: 2em;
+          min-width: 40em;
+          max-width: 40em;
+          margin: 2em 0 2em 0;
+          
         }
         .continue {
-            margin: 0.5em 0 7em 0;
+            margin: 0.4em 0 0 0;
+            padding: 1.5em;
+        }
+        .summary {
+            margin-right: 4em;
         }
 
         .summary div {
-            font-size: 150%;
+            font-size: 105%;
             font-weight: 800;
-            margin-right: 11.9em;
-            margin-top: 1.5em;
-            font-size: 110%;
+            padding: 2.5em;
+            margin-top: 1.7em;
+            margin-right: 8em;
         }
 
         .circle {
             /* border: 1px solid black; */
             border-radius: 50%;
-            height: 10em;
-            width: 10em;
-            margin-bottom: 1em;
+            height: 9em;
+            width: 9em;
+            margin: 1.1em 0 1.1em 0;
         }
 
         .result {
             color: hsl(241, 100%, 89%);
             font-size: 120%;
-            margin: 1em 0 0 0;
+            margin: -1.3em 0 0 0;
         }
 
         .score {
-            font-size: 110%;
+            font-size: 105%;
             width: 70%;
+            margin: 0;
         }
 
         .great {
-            font-size: 170%;
+            font-size: 160%;
             margin: 0;
         }
 
@@ -274,11 +317,43 @@ body {
             font-size: 95%;
         }
 
+        .reaction, .memory, .verbal, .visual {
+            padding: 0.4em;
+        }
+
+        .reaction-two, .memory-two, .verbal-two, .visual-two {
+            font-size: 90%;
+            margin-right: 6.7em;
+        }
+
+        .reaction-two {
+            margin: 0 6.6em 0 0
+        }
+
+        .verbal-two {
+            margin: 0 7.6em 0 0;
+        }
+
+        .visual-two {
+            margin: 0 7.8em 0 0;
+        }
+
 }
 
 @media (max-width: 800px ) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        width: 27.5;
+        margin: 0;
+    }
+
+
     .attribution {
-          min-width: 500px;
+        width: 27.5em;
+          min-width: 27.5em;
+          max-width: 27.5em;
+          margin: 2em 0 2em 0;
         }
 
 }
